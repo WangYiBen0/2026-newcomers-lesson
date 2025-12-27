@@ -2,7 +2,9 @@
 marp: true
 paginate: true
 # title: AAA史山代码批发
-# backgroundImage: url('https://nixos.org/_astro/nixos-logo-default-gradient-black-regular-horizontal-none.BPpok6mb_JppMK.svg')
+# backgroundImage: "linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://nixos.org/_astro/nixos-logo-default-gradient-black-regular-horizontal-none.BPpok6mb_JppMK.svg')"
+# backgroundImage: "linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.4SSnbRNlJmyDqYl46TGOPgHaEL%3Fpid%3DApi&f=1&ipt=806769f73cb4d81b9f90c4492aa2ba4df316c715e5b366837d7becf998cbb421&ipo=images')"
+backgroundImage: "linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://www.sj51.net/wp-content/uploads/2023/12/2023120913045918.png')"
 ---
 
 # OI 与 C++ 与你：逃离文化课的实用方法
@@ -10,6 +12,8 @@ paginate: true
 PS: 大部分 `cp` from OI-Wiki
 
 Powered by [Marp](https://marp.app/)
+
+<!-- ![bg opacity:0.5](https://images.sj33.cn/uploads/202010/7-201004092934457.jpg) -->
 
 ---
 
@@ -26,6 +30,7 @@ Powered by [Marp](https://marp.app/)
 * [C++](#二c基础语法)
   * [关键字](#1-关键字)
   * [一些语法糖 & 小技巧](#2-一些语法糖小技巧)
+  * [类、OOP、泛型编程、模板元编程……](#3-类oop泛型编程模板元编程)
 * [Good Luck & Have Fun](#gl--hf)
 
 ---
@@ -178,7 +183,41 @@ std::ios::sync_with_stdio(false), std::cin.tie(nullptr);
 
 ---
 
-以下是一段经典的缺省源：（PS: 缺省源，顾名思义，缺省的源代码）
+### (3) 类、OOP、泛型编程、模板元编程……
+
+OI 里没啥用，但是了解一下总是好的，毕竟用 STL CE 了报错信息都看不懂就悲剧了。
+
+可以选择不学。
+
+---
+
+首先了解一下 OOP。
+
+OOP ，全称 Object-oriented programming，面向对象编程，与面向过程编程（POP）相对，是一种思想。
+
+对象，可以理解为变量，就是你要操作的东西。类就是对象的类型。
+
+面向对象编程，顾名思义，就是以对象为中心，将数据与处理数据的方法封装。STL 就是 OOP 的一个典范。
+
+当使用 STL 的时候，你写的是 `a.push_back(x);` 而不是 `push_back(a, x);`，前者强调 `a` 的操作，后者强调 `push_back` 这个动作。
+
+相对的，面向过程编程，则是分离数据与逻辑，强调“怎么做”。
+
+---
+
+至于泛型，就是一种将算法和数据类型解耦的编程范式，同样可以参考 STL。
+
+`std::vector<int>` 中的 `<int>` 就是把 `int` 这个类型传进 `std::vector` 这个模板，于是你得到了一个可以存储 `int` 的 `std::vector`。
+
+泛型在封装数据结构的时候很有用，它使你能抛开数据结构要存储的类型，专心于数据结构，而且写出来的代码可复用。
+
+模板元编程（Template Meta Programming）是 C++ 的特性，允许你在编译期计算，但是语法非常反人类，就不介绍了，感兴趣的可以课后自行了解。
+
+---
+
+缺省源，顾名思义，缺省的源代码。
+
+以下是一段经典的缺省源：
 
 ---
 
