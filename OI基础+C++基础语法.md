@@ -288,11 +288,11 @@ int main() {
 * [哔哩哔哩](https://www.bilibili.com/video/BV1GJ411x7h7)
 * [OI-Wiki](https://oi-wiki.org/?q=OI+Wiki)
 * [洛谷](https://www.luogu.com.cn/user/3)
-* [代码力量](https://codeforces.com)
+* [代码力量](https://codeforces.com/profile/MikeMirzayanov)
 * [AtCoder](https://atcoder.jp)
 * [LibreOJ](https://loj.ac)
 * [水滴OJ](https://hydro.ac)
-* [OIer Db](https://oier.baoshuo.dev)
+* [OIer Db](https://oier.baoshuo.dev/oier/7266)
 
 ---
 
